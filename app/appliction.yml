@@ -1,6 +1,6 @@
 default:
   server:
-    port: 3000
+    port: 8100
   mservice:
     ip: 192.168.10.54
 dev:
@@ -8,8 +8,8 @@ dev:
     port: 8100
 test:
   server:
-    port: 3000
+    port: 8100
 production:
   server:
-    port: 3000
+    port: 8100
  

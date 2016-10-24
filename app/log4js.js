@@ -11,7 +11,7 @@ log4js.configure({
             category: "DEBUG"
         },
         {
-            type: 'DateFile',
+            type: 'dateFile',
             filename: 'logs/access',
             maxLogSize: 20480,
             backups: 3,

@@ -69,9 +69,8 @@ class PatientService {
     //     "totalElements": 0,
     //     "totalPages": 0
     // }
-    static async getPatientListByNameOrMrnOrderByAdmissionTime(name, mrn, page, size) {
-        page = page || 0;
-        size = size || 1000;
+    static async getPatientListByNameOrMrnOrderByAdmissionTime(name, mrn, page=0, size=1000) {
+        
         let result = [];
         let baseUrl = Util.getBaseUrlByServiceName("baseinfo");
         let options = Util.getdefaultOptions();
